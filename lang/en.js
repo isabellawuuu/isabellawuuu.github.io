@@ -27,16 +27,26 @@ I study how complex biological systems change over time and what drives their dy
 const enResearchPageData = {
   title: "Research",
   content: `
-### Microbiome dynamics: deterministic chaos or stochasticity?
-Microbial communities can show large fluctuations over time, but it is often unclear whether those patterns reflect deterministic dynamics or random variation. My current rotation research examines longitudinal microbiome diversity time series and asks whether the observed fluctuations are consistent with deterministic nonlinear dynamics (including chaos) versus stochastic processes.
+### Microbiome Dynamics and Nonlinear Systems
 
-I use tools from nonlinear time-series analysis and computational biology, including phase-space reconstruction, recurrence analysis, and surrogate-data tests to evaluate deterministic structure in microbiome dynamics.
+Microbial communities often show large fluctuations over time, yet the mechanisms underlying these dynamics remain poorly understood. My current research at the University of Virginia examines longitudinal microbiome data to determine whether observed fluctuations arise from deterministic nonlinear dynamics, including chaotic behavior, or from stochastic variation.
 
-### Carbon-neutral microbial platform for selective mineral recovery
-In my first PhD rotation, I worked on engineering *Arthrospira platensis* (Spirulina) as a microbial platform for carbon-neutral recovery of critical minerals using designed protein ligands. This included vector construction, gene integration, and characterization of transformants.
+To address this question, I apply computational and mathematical approaches such as phase-space reconstruction, recurrence analysis, and nonlinear time-series methods to characterize the structure and stability of microbiome dynamics.
 
-### RNA therapeutics: synergism between mRNA and siRNA
-During my undergraduate research, I developed a genome-wide siRNA screening approach to identify regulators of exogenous RNA expression, with the goal of improving RNA therapeutic performance and reducing immunotoxicity.
+
+### RNA Therapeutics and siRNA Screening
+
+During my undergraduate research at Duke Kunshan University and Duke University, I developed a genome-wide siRNA screening approach to identify genes that regulate exogenous RNA expression. This work aimed to improve the efficiency and safety of RNA-based therapeutics, including applications in mRNA vaccines and cancer therapies.
+
+The project combined high-content screening with molecular and computational analyses to identify candidate genes influencing RNA expression and cellular responses.
+
+
+### Developmental Physiology and Mathematical Modeling
+
+At Duke University, I studied developmental physiology in the tobacco hornworm *Manduca sexta*, focusing on how environmental and physiological factors influence body size and wing development.
+
+This work integrated experimental measurements with time-series analysis and mathematical modeling to explore relationships between body size, metabolism, and hormonal regulation during development.
+
 `,
 };
 
