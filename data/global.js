@@ -7,7 +7,7 @@ const navbarLinks = {
 };
 
 const globalData = {
-  image: "../files/profile.jpg",
+  image: "files/profile.jpg",
   resume: "",
   enAddress: "Charlottesville, VA, USA ",
   faAddress: "",
