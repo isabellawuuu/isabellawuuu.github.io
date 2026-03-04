@@ -15,6 +15,6 @@ const globalData = {
   email: "egg4pb@virginia.edu",
   linkedinTitle: "Shu Wu",
   linkedin: "www.linkedin.com/in/shu-wu-404aa4239",
-  #orcidTitle: "Orcid Username",
-  #orcid: "https://orcid.com/your_username",
+  //orcidTitle: "Orcid Username",
+  //orcid: "https://orcid.com/your_username",
 };
