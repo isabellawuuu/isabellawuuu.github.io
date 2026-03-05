@@ -1,3 +1,8 @@
+<script src="/assets/scripts/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="/assets/scripts/scripts.js"></script>
 // English-only + simple page router
 (function () {
   const lang = "en";
