@@ -7,10 +7,17 @@
 // Force English only (no FA toggle)
 localStorage.setItem("lang", "en");
 
-const pathname = window.location.pathname
-  .replace(".html", "")
-  .replace(/\/+$/, ""); // remove trailing slash
+const path = window.location.pathname;
+const isHome =
+  path === "/" ||
+  path.endsWith("/index.html") ||
+  path.endsWith("/index") ||
+  path.endsWith("/shuwu.github.io/") ||
+  path.includes("/shuwu.github.io/index");
 
+if (isHome) {
+  homeData();
+}
 function safeSetText(id, text) {
   const el = document.getElementById(id);
   if (el) el.innerText = text ?? "";
