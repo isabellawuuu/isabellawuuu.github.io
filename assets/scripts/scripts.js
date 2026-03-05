@@ -3,31 +3,15 @@ var pathname = window.location.pathname.replace(".html", "");
 
 $(document).ready(function () {
   // ---------- Language Handler
-  if (!lang) {
-    localStorage.setItem("lang", "en");
-  }
+  // Force English only
+localStorage.setItem("lang", "en");
+var lang = "en";
 
-  if (lang === "fa") {
-    document.getElementById("content_wrapper").classList.add("rtl_wrapper");
-    if (
-      document.getElementById("languageIcon") &&
-      document.getElementById("languageText")
-    ) {
-      document.getElementById("languageIcon").src =
-        "../assets/images/icons/en.png";
-      document.getElementById("languageText").innerText = "EN";
-    }
-  } else {
-    document.getElementById("content_wrapper").classList.add("ltr_wrapper");
-    if (
-      document.getElementById("languageIcon") &&
-      document.getElementById("languageText")
-    ) {
-      document.getElementById("languageIcon").src =
-        "../assets/images/icons/ir.png";
-      document.getElementById("languageText").innerText = "FA";
-    }
-  }
+var pathname = window.location.pathname.replace(".html", "");
+
+$(document).ready(function () {
+  // Direction (always LTR)
+  document.getElementById("content_wrapper")?.classList.add("ltr_wrapper");
 
   // Home page data
   const home_data = {
@@ -36,41 +20,41 @@ $(document).ready(function () {
       {
         name: `mailto:${globalData.email}`,
         active: globalData.email ? true : false,
-        img: "../assets/images/icons/mail.png",
+        img: "/assets/images/icons/mail.png",
       },
       {
         name: globalData.whatsapp,
         active: globalData.whatsapp ? true : false,
-        img: "../assets/images/icons/whatsapp.png",
+        img: "/assets/images/icons/whatsapp.png",
       },
       {
         name: globalData.twitter,
         active: globalData.twitter ? true : false,
-        img: "../assets/images/icons/twitter.png",
+        img: "/assets/images/icons/twitter.png",
       },
       {
         name: globalData.linkedin,
         active: globalData.linkedin ? true : false,
-        img: "../assets/images/icons/linkedin.png",
+        img: "/assets/images/icons/linkedin.png",
       },
       {
         name: globalData.github,
         active: globalData.github ? true : false,
         url: "/",
-        img: "../assets/images/icons/github.png",
+        img: "/assets/images/icons/github.png",
       },
       {
         name: globalData.resume,
         active: globalData.resume ? true : false,
         url: "/",
-        img: "../assets/images/icons/resume.png",
+        img: "/assets/images/icons/resume.png",
       },
     ],
   };
 
   function homeData() {
     document.getElementById("page_title").innerText =
-      lang === "en" ? enHomePageData.name : faHomePageData.name;
+       === "en" ? enHomePageData.name : faHomePageData.name;
 
     document.getElementById("home_image").src = home_data.image
       ? home_data.image
