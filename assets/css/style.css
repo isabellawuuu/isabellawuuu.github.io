@@ -147,8 +147,13 @@
   transition: transform 0.2s ease;
 }
 
+.home_links img {
+  width: 38px;
+  opacity: 0.8;
+}
+
 .home_links img:hover {
-  transform: scale(1.15); /* small hover effect */
+  opacity: 1;
 }
 /* Publications page styles */
 #publications_content {
