@@ -183,8 +183,8 @@
 
     const path = normalizePath(window.location.pathname);
 
-    if (path === "/") return renderHome();
-    if (path === "/research") return renderResearch();
-    if (path === "/contact") return renderContact();
+    if (path === "/" || path === "/index.html") return renderHome();
+    if (path === "/research" || path === "/research.html") return renderResearch();
+    if (path === "/contact" || path === "/contact.html") return renderContact();
   });
 })();
