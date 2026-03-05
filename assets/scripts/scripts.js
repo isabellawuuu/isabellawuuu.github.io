@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   function homeData() {
     document.getElementById("page_title").innerText =
-       === "en" ? enHomePageData.name : faHomePageData.name;
+      lang === "en" ? enHomePageData.name : faHomePageData.name;
 
     document.getElementById("home_image").src = home_data.image
       ? home_data.image
