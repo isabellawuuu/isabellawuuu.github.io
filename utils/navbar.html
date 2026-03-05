@@ -4,7 +4,8 @@
   data-aos="fade-in"
 >
   <div class="container">
-    <a class="navbar-brand" href="#" id="navbar_title"></a>
+    <a class="navbar-brand" href="/" id="navbar_title"></a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -16,32 +17,16 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav" id="navbar_links"></ul>
-      <div id="language" class="language_wrapper" onClick="languageHandler()">
-        <img id="languageIcon" alt="Language" />
-        <span id="languageText"></span>
-      </div>
     </div>
   </div>
 </nav>
 
-<script src="../assets/scripts/scripts.js"></script>
-<script src="../data/navbar.js"></script>
-
-<script>
-  function languageHandler() {
-    let lang = localStorage.getItem("lang");
-
-    if (lang === "en") {
-      localStorage.setItem("lang", "fa");
-      location.reload();
-    } else {
-      localStorage.setItem("lang", "en");
-      location.reload();
-    }
-  }
-</script>
+<!-- Optional: if your site already loads scripts.js on every page,
+     you can delete this next line to avoid double-loading -->
+<script src="/assets/scripts/scripts.js"></script>
 
 <script>
   AOS.init();
