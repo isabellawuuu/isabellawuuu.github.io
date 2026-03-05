@@ -17,7 +17,7 @@ const enHomePageData = {
 <p><strong>Research interests</strong><br>
 - Microbiome dynamics & complex systems biology<br>  
 - Nonlinear time-series analysis<br> 
-- Computational and mathematical modeling<p>  
+- Computational and mathematical modeling</p>  
 `,
 };
 
