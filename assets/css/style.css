@@ -628,3 +628,7 @@
 .rtl_wrapper #contact_data a {
   direction: ltr;
 }
+#language,
+.language_wrapper {
+  display: none !important;
+}
