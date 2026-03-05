@@ -127,38 +127,29 @@
   margin-bottom: 0.4rem;
 }
 
-#home_links {
-  display: flex;
-  align-items: center;
-  list-style: none;
+.home_links {
+  list-style: none;       /* remove bullets */
+  padding: 0;
   margin-top: 20px;
-}
 
-#home_links a {
-  margin: 0 0.5rem;
-  width: 33px;
-  display: block;
-  display: flex;
-  align-items: center;
+  display: flex;          /* make items horizontal */
   justify-content: center;
-  padding-bottom: 0;
-  transform: scale(1);
-  transition: all 0.3s;
+  gap: 20px;              /* space between icons */
 }
 
-#home_links a:hover {
-  transform: scale(1.1);
+.home_links li {
+  display: inline-block;
 }
 
-#home_links img {
-  width: auto;
-  height: 33px;
-  box-shadow: none;
-  object-fit: contain;
-  border-radius: 0;
-  border: none;
+.home_links img {
+  width: 35px;            /* icon size */
+  height: 35px;
+  transition: transform 0.2s ease;
 }
 
+.home_links img:hover {
+  transform: scale(1.15); /* small hover effect */
+}
 /* Publications page styles */
 #publications_content {
   margin-top: 1rem;
