@@ -6,38 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.png" />
-    <link href="/assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
-    <link href="/assets/css/aos.css" type="text/css" rel="stylesheet" />
-    <link href="/assets/css/style.css" type="text/css" rel="stylesheet" />
-
-    <!-- Fork this repository for free:  https://github.com/simamojtahedi -->
-
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="/assets/css/aos.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 
     <title id="page_title"></title>
   </head>
 
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-in">
-  <div class="container">
-    <a class="navbar-brand" href="/" id="navbar_title"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-in">
+      <div class="container">
+        <a class="navbar-brand" href="/" id="navbar_title"></a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" id="navbar_links"></ul>
-    </div>
-  </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="navbar_links"></ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container" data-aos="fade-in" id="content_wrapper">
       <div class="row main_header">
         <div class="col-lg-4 main_header_info">
@@ -54,7 +52,16 @@
       </div>
     </div>
 
-    <!-- Load site data first, then renderer -->
+    <!-- jQuery first (scripts.js uses $) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS bundle (navbar toggle) -->
+    <script src="/assets/scripts/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS (ONLY if this file exists in your repo; otherwise delete this line) -->
+    <script src="/assets/scripts/aos.js"></script>
+
+    <!-- Site data + renderer -->
     <script src="/data/global.js"></script>
     <script src="/lang/en.js"></script>
     <script src="/assets/scripts/scripts.js"></script>
