@@ -16,16 +16,31 @@
     <!-- Fork this repository for free:  https://github.com/simamojtahedi -->
 
     <script src="./assets/scripts/default.js"></script>
-    <script>
-      $(function () {
-        $("#include_navbar").load("./utils/navbar.html");
-      });
-    </script>
-
+    
     <title id="page_title"></title>
   </head>
   <body>
-    <div id="include_navbar"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-in">
+  <div class="container">
+    <a class="navbar-brand" href="/" id="navbar_title"></a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" id="navbar_links"></ul>
+    </div>
+  </div>
+</nav>
     <div class="container pt-4" data-aos="fade-in" id="content_wrapper">
       <h6 id="contact_title" class="title"></h6>
       <ul id="contact_data"></ul>
